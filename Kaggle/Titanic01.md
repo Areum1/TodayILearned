@@ -1,42 +1,33 @@
 # 사이킷런으로 수행하는 타이타닉 생존자 예측
-처음 다루는 데이터라 잘 모르는게 많아서 대부분 확실하지 않다...
+처음 다루는 데이터라 잘 모르는게 많아서 대부분 확실하지 않다 (뇌피셜)
 #### 들어가기 전 ) 사이킷런이란? 
 ```
 1. 머신러닝 알고리즘들을 효율적이고 생산적으로 사용할 수 있게 사용자 친화적인 인터페이스를 제공하는 라이브러리
 2. 여러 가지 분류 알고리즘에 대단히 최적화되었고, 사용자 친화적 인터페이스와 결합된 API
 3. 방대한 학습 알고리즘 + 데이터 전처리나 미세 튜닝, 그리고 우리의 모델을 평가하는 데 편리한 함수 제공
 ```
-###### _In [1]: 으로 되어있는게 사이킷런 아닐까?_ 😅
 
 [사이킷런 출처](http://www.datamarket.kr/xe/index.php?mid=board_oFxn34&listStyle=gallery&document_srl=25783)
 
 ### 1) 선언과 데이터 확인하기
 
 ```python
-import numpy as np
-import pandas as pd
-import matplotlib.pyplot as plt
-import seaborn as sns
+import numpy as np ##계산
+import pandas as pd ##파이썬 데이터 처리
+import matplotlib.pyplot as plt ##데이터 시각화 (그래프)
+import seaborn as sns ##데이터 시각화
 %matplotlib inline
 
 titanic_df = pd.read_csv('/kaggle/input/titanic/train.csv')
-titanic_df.head(3)
+titanic_df.head(3) ## .head(n) 가 위에 있는 데이터를 n개 가져온다
 ```
-
-.head(n) 가 위에 있는 데이터를 n개 가져온다는 뜻  
-numpy는 계산을 위해 선언한 것이라 했다...  
-pandas는 파이썬 데이터 처리를 위한 라이브러리  
-matplotlib는 그래프 그리기를 위한 라이브러리  
-seaborn도 데이터 시각화를 위한 라이브러리..  
-***뒤에서 사용하는 BarPlot을 위한 라이브러리 인가보다!!***  
 
 ### 2) 로딩된 데이터 칼럼 타입 확인
 
 ```python
 print(titanic_df.info())
+##.info()는 데이터의 개수, 널의 개수(?), 데이터 타입, 데이터 타입의 개수, 메모리 사용한 양을 알 수 있다
 ```
-
-.info()는 데이터의 개수, 널의 개수(?), 데이터 타입, 데이터 타입의 개수, 메모리 사용한 양을 알 수 있는 코드인 듯..
 
 ### 3) 사이킷런 머신러닝 알고리즘을 위해 Null 값 처리하기
 
