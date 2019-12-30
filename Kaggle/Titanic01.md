@@ -1,9 +1,7 @@
 # 사이킷런으로 수행하는 타이타닉 생존자 예측
-처음 다루는 데이터라 잘 모르는게 많아서 대부분 확실하지 않다 (뇌피셜 많음)   
-
-#### 직접 코딩한 주소
-[보기](https://colab.research.google.com/drive/1rYIpGkYmJ1BktWhK8E4XfIyGWBLg3Gu6)   
-[참고한 자료](https://writeren.tistory.com/68)   
+처음 다루는 데이터라 잘 모르는게 많아서 대부분 확실하지 않다 (뇌피셜 많음)    
+[코딩한 주소 보기](https://colab.research.google.com/drive/1rYIpGkYmJ1BktWhK8E4XfIyGWBLg3Gu6)   
+[참고한 자료](https://writeren.tistory.com/68)  
 
 #### 들어가기 전 ) 사이킷런이란? 
 ```
