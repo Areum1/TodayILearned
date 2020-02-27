@@ -46,7 +46,7 @@ NLP (Natural Language Processing, 자연어처리)는 텍스트에서 의미있�
 
 ### Frequency based Embedding : 횟수 기반 임베딩
 #### Bag of Words(BOW) : 단어들의 출연 빈도만으로 단어 사전(주머니) 만들기
-- [더 알고 싶은 사람 참고링크](https://wikidocs.net/22650)   
+- [더 알고 싶은 사람 링크 참고](https://wikidocs.net/22650)   
 - I have an apple. and I want to eat an apple.
 → [I, have, an, apple, and, want, to, eat]
 
