@@ -23,13 +23,13 @@ NLP (Natural Language Processing, 자연어처리)는 텍스트에서 의미있�
  - FreqDist : 문서에 사용된 단어(토큰)의 사용빈도 정보를 담는 클래스
  - 워드클라우드 : 단어의 사용 빈도수에 따라 워드클라우드(Word Cloud) 시각화 할 수 있다
 #### [KoNLPy](https://konlpy-ko.readthedocs.io/ko/v0.4.3/) : 우리나라 한글에 특화된 자연어 처리 라이브러리
-- [단어 품사 별 분류 (더 알고싶은 사람 링크 참고)](https://datascienceschool.net/view-notebook/70ce46db4ced4a999c6ec349df0f4eb0/)
+- 단어 품사 별 분류 [(더 알고싶은 사람 링크 참고)](https://datascienceschool.net/view-notebook/70ce46db4ced4a999c6ec349df0f4eb0/)
   - Hannanum
   - Kkma
   - Komoran
   - Twitter
 #### [Scikit-learn](https://scikit-learn.org/stable/modules/feature_extraction.html) : 대표적인 Python 머신러닝 라이브러리에서는 문서 전처리용 클래스를 제공해줌
-- [기능 (더 알고싶은 사람 링크 참고)](https://datascienceschool.net/view-notebook/3e7aadbf88ed4f0d87a76f9ddc925d69/)
+- 기능 [(더 알고싶은 사람 링크 참고)](https://datascienceschool.net/view-notebook/3e7aadbf88ed4f0d87a76f9ddc925d69/)
   - DicVectorizer : 단어의 수를 세어놓은 사전에서 BOW 벡터를 만든다.
   - CountVectorizer: 문서 집합으로부터 단어의 수를 세어 BOW 벡터를 만든다.
   - Tfidfvectorizer: 문서 집합으로부터 단어의 수를 세고 TF-IDF 방식으로 단어의 가중치를 조정한 BOW 벡터를 만든다.(CounterVectorizer의 서브클래스로 CountVectorizer를 이용해 BOW를 만들고 TfidTransformer를 사용해 tf-idf로 변환)
