@@ -48,7 +48,7 @@ NLP (Natural Language Processing, 자연어처리)는 텍스트에서 의미있�
 #### Bag of Words(BOW) : 단어들의 출연 빈도만으로 단어 사전(주머니) 만들기
 - I have an apple. and I want to eat an apple.
 → [I, have, an, apple, and, want, to, eat]
-
+- [더 알고 싶은 사람 참고링크](https://wikidocs.net/22650)
 |Terms|Index|Count|
 |----|----|----|
 |I|0|2|
