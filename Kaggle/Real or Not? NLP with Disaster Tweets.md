@@ -35,11 +35,54 @@ NLP (Natural Language Processing, 자연어처리)는 텍스트에서 의미있�
   - Tfidfvectorizer: 문서 집합으로부터 단어의 수를 세고 TF-IDF 방식으로 단어의 가중치를 조정한 BOW 벡터를 만든다.(CounterVectorizer의 서브클래스로 CountVectorizer를 이용해 BOW를 만들고 TfidTransformer를 사용해 tf-idf로 변환)
   - HashingVectorizer: hashing trick을 사용하여 빠르게 BOW 벡터를 만든다.
 
-     
-# 참고 문서
-[자연어(NLP) 처리 기초 정리](http://hero4earth.com/blog/learning/2018/01/17/NLP_Basics_01/)   
-[NLP 형태소 분석 알고리즘](https://ra2kstar.tistory.com/170)   
-[NLP란 무엇인가요?](https://konlpy-ko.readthedocs.io/ko/v0.4.3/start/#what-is-nlp)
-[KoNLPy: 파이썬 한국어 NLP](https://konlpy-ko.readthedocs.io/ko/v0.4.3/)
-[NLTK 자연어 처리 패키지](https://datascienceschool.net/view-notebook/8895b16a141749a9bb381007d52721c1/)
-[KoNLPy 간단 사용법](https://m.blog.naver.com/PostView.nhn?blogId=myincizor&logNo=221629109172&proxyReferer=https%3A%2F%2Fwww.google.com%2F)
+### 자연어 처리 기법을 이용한 머신러닝 방법
+- Word Embedding: 벡터화
+- 학습
+- 예측
+
+### Word Embedding
+- Frequency based Embedding : 횟수 기반 임베딩
+- Prediction based Vector
+
+#### Frequency based Embedding : 횟수 기반 임베딩
+##### Bag of Words(BOW) : 단어들의 출연 빈도만으로 단어 사전(주머니) 만들기
+- I have an apple. and I want to eat an apple.
+→ [I, have, an, apple, and, want, to, eat]
+
+|Terms|Index|Count|
+|----|----|----|
+|I|0|2|
+|have|1|1|
+|an|2|2|
+|apple|3|2|
+|and|4|1|
+|want|5|1|
+|to|6|1|
+|eat|7|1|
+
+##### Count Vector : 모든 문서에서 어휘를 학습한 다음 문서마다의 어휘 횟수 세는 방법 (비효율적인 연산)
+- D1: He is a lazy boy. She is also lazy.    
+- D2: Neeraj is a lazy person.   
+- Number of Tokens : [‘He’,’She’,’lazy’,’boy’,’Neeraj’,’person’]
+    
+|Terms|D1|D2|
+|----|----|----|
+|He|1|0|
+|She|1|0|
+|lazy|2|1|
+|boy|1|0|
+|Neeraj|0|1|
+|person|0|1|
+
+##### [(TF-IDF)Term Frequency - inverse Document Frequency](https://ko.wikipedia.org/wiki/Tf-idf)
+전체 말뭉치(corpus)에서 단어의 개수도 함께 세기 = 특정 단어가 문서 내에 얼마나 자주 등장하는지(TF:단어빈도) * 어떤 단어가 문서 전체 집합에서 얼마나 많이 나오는지(IDF:역문서빈도)
+
+## 참고 문서
+- [자연어(NLP) 처리 기초 정리](http://hero4earth.com/blog/learning/2018/01/17/NLP_Basics_01/)   
+- [NLP 형태소 분석 알고리즘](https://ra2kstar.tistory.com/170)   
+- [NLP란 무엇인가요?](https://konlpy-ko.readthedocs.io/ko/v0.4.3/start/#what-is-nlp)
+- [KoNLPy: 파이썬 한국어 NLP](https://konlpy-ko.readthedocs.io/ko/v0.4.3/)
+- [NLTK 자연어 처리 패키지](https://datascienceschool.net/view-notebook/8895b16a141749a9bb381007d52721c1/)
+- [KoNLPy 간단 사용법](https://m.blog.naver.com/PostView.nhn?blogId=myincizor&logNo=221629109172&proxyReferer=https%3A%2F%2Fwww.google.com%2F)
+- [워드투벡터(Word2Vec)](https://wikidocs.net/22660)
+- [자연어처리(NLP) - 컴퓨터가 자연어를 이해하는방법(벡터화)](https://khann.tistory.com/28)
