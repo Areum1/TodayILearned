@@ -23,7 +23,7 @@ NLP (Natural Language Processing, 자연어처리)는 텍스트에서 의미있�
  - FreqDist : 문서에 사용된 단어(토큰)의 사용빈도 정보를 담는 클래스
  - 워드클라우드 : 단어의 사용 빈도수에 따라 워드클라우드(Word Cloud) 시각화 할 수 있다
 #### [KoNLPy](https://konlpy-ko.readthedocs.io/ko/v0.4.3/) : 우리나라 한글에 특화된 자연어 처리 라이브러리
-- 단어 품사 별 분류
+- [단어 품사 별 분류](https://datascienceschool.net/view-notebook/70ce46db4ced4a999c6ec349df0f4eb0/)
   - Hannanum
   - Kkma
   - Komoran
