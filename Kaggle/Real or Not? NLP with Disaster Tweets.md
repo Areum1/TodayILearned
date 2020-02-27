@@ -44,8 +44,8 @@ NLP (Natural Language Processing, 자연어처리)는 텍스트에서 의미있�
 - Frequency based Embedding : 횟수 기반 임베딩
 - Prediction based Vector
 
-#### Frequency based Embedding : 횟수 기반 임베딩
-##### Bag of Words(BOW) : 단어들의 출연 빈도만으로 단어 사전(주머니) 만들기
+### Frequency based Embedding : 횟수 기반 임베딩
+#### Bag of Words(BOW) : 단어들의 출연 빈도만으로 단어 사전(주머니) 만들기
 - I have an apple. and I want to eat an apple.
 → [I, have, an, apple, and, want, to, eat]
 
@@ -60,7 +60,7 @@ NLP (Natural Language Processing, 자연어처리)는 텍스트에서 의미있�
 |to|6|1|
 |eat|7|1|
 
-##### Count Vector : 모든 문서에서 어휘를 학습한 다음 문서마다의 어휘 횟수 세는 방법 (비효율적인 연산)
+#### Count Vector : 모든 문서에서 어휘를 학습한 다음 문서마다의 어휘 횟수 세는 방법 (비효율적인 연산)
 - D1: He is a lazy boy. She is also lazy.    
 - D2: Neeraj is a lazy person.   
 - Number of Tokens : [‘He’,’She’,’lazy’,’boy’,’Neeraj’,’person’]
@@ -74,8 +74,24 @@ NLP (Natural Language Processing, 자연어처리)는 텍스트에서 의미있�
 |Neeraj|0|1|
 |person|0|1|
 
-##### [(TF-IDF)Term Frequency - inverse Document Frequency](https://ko.wikipedia.org/wiki/Tf-idf)
-전체 말뭉치(corpus)에서 단어의 개수도 함께 세기 = 특정 단어가 문서 내에 얼마나 자주 등장하는지(TF:단어빈도) * 어떤 단어가 문서 전체 집합에서 얼마나 많이 나오는지(IDF:역문서빈도)
+#### (TF-IDF)Term Frequency - inverse Document Frequency
+[블로그 참고](https://khann.tistory.com/28) >> 귀찮아서 그러는 거 아님 ^.^ 블로그가 더 잘 나왔음 그리고 이 문서도 블로그 거의 가져온거라 블로그가 더 잘 되어있음.
+
+### Prediction Based Embedding : 예측 기반 벡터
+#### Word2Vec : CBOW와 Skip-gram방식의 알고리즘을 이용한 word-embedding
+![image](https://user-images.githubusercontent.com/48716298/75445629-25fe7680-59a9-11ea-9538-953ca22a5b91.png)
+MAN과 WOMAN의 거리는 KING과 QUEEN의 거리와 유사하다
+
+#### CBOW(Continuous Bag of Words) : 문장에서 한 단어 앞뒤로 붙어있는 단어들을 통해서 해당 단어 유추하는 방법
+- 나는 추운 겨울보다 _ 여름이 좋아" 에서 "겨울보다"와 "여름이"를 통해 _ 을 "따뜻한"으로 유추
+![image](https://user-images.githubusercontent.com/48716298/75445680-429aae80-59a9-11ea-965e-69560b0d14d3.png)
+Input layer : ["겨울보다", "여름이"]  → Hidden layer(가중치:w) → Output layer : ["따뜻한"] (One-hot-encoding)
+단점 : "따뜻한 여름이" 에서의 "따뜻한"과 "마음이 따뜻한"에서의 "따뜻한"이 같이 쓰일경우 문제가 발생
+
+#### Skip-gram : CBOW와 Input Output의 Layout구조만 반대. 손실함수는 CBOW와 같다
+Input layer : ["따뜻한"] → Hidden layer(가중치:w) → Output layer : ["겨울보다", "여름이"]
+장점 : 한 단어와 연관된 두 가지 이상의 의미론적 벡터를 찾을 수 있다. → CBOW보다 결과가 더 좋다고 확인됐다.
+
 
 ## 참고 문서
 - [자연어(NLP) 처리 기초 정리](http://hero4earth.com/blog/learning/2018/01/17/NLP_Basics_01/)   
