@@ -5,3 +5,6 @@
 
 ### NLP 정리
 Natural language processing
+
+### 참고 문서
+[자연어(NLP) 처리 기초 정리](http://hero4earth.com/blog/learning/2018/01/17/NLP_Basics_01/)
