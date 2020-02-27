@@ -94,11 +94,11 @@ Input layer : ["따뜻한"] → Hidden layer(가중치:w) → Output layer : ["�
 
 
 ## 참고 문서
-- [자연어(NLP) 처리 기초 정리](http://hero4earth.com/blog/learning/2018/01/17/NLP_Basics_01/)   
+- _[자연어(NLP) 처리 기초 정리](http://hero4earth.com/blog/learning/2018/01/17/NLP_Basics_01/)_   
 - [NLP 형태소 분석 알고리즘](https://ra2kstar.tistory.com/170)   
 - [NLP란 무엇인가요?](https://konlpy-ko.readthedocs.io/ko/v0.4.3/start/#what-is-nlp)
 - [KoNLPy: 파이썬 한국어 NLP](https://konlpy-ko.readthedocs.io/ko/v0.4.3/)
 - [NLTK 자연어 처리 패키지](https://datascienceschool.net/view-notebook/8895b16a141749a9bb381007d52721c1/)
 - [KoNLPy 간단 사용법](https://m.blog.naver.com/PostView.nhn?blogId=myincizor&logNo=221629109172&proxyReferer=https%3A%2F%2Fwww.google.com%2F)
 - [워드투벡터(Word2Vec)](https://wikidocs.net/22660)
-- [자연어처리(NLP) - 컴퓨터가 자연어를 이해하는방법(벡터화)](https://khann.tistory.com/28)
+- _[자연어처리(NLP) - 컴퓨터가 자연어를 이해하는방법(벡터화)](https://khann.tistory.com/28)_
