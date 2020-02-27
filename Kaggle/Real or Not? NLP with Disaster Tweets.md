@@ -23,13 +23,13 @@ NLP (Natural Language Processing, 자연어처리)는 텍스트에서 의미있�
  - FreqDist : 문서에 사용된 단어(토큰)의 사용빈도 정보를 담는 클래스
  - 워드클라우드 : 단어의 사용 빈도수에 따라 워드클라우드(Word Cloud) 시각화 할 수 있다
 #### [KoNLPy](https://konlpy-ko.readthedocs.io/ko/v0.4.3/) : 우리나라 한글에 특화된 자연어 처리 라이브러리
-- [단어 품사 별 분류](https://datascienceschool.net/view-notebook/70ce46db4ced4a999c6ec349df0f4eb0/)
+- [단어 품사 별 분류 (더 알고싶은 사람 링크 참고)](https://datascienceschool.net/view-notebook/70ce46db4ced4a999c6ec349df0f4eb0/)
   - Hannanum
   - Kkma
   - Komoran
   - Twitter
 #### [Scikit-learn](https://scikit-learn.org/stable/modules/feature_extraction.html) : 대표적인 Python 머신러닝 라이브러리에서는 문서 전처리용 클래스를 제공해줌
-- [기능](https://datascienceschool.net/view-notebook/3e7aadbf88ed4f0d87a76f9ddc925d69/)
+- [기능 (더 알고싶은 사람 링크 참고)](https://datascienceschool.net/view-notebook/3e7aadbf88ed4f0d87a76f9ddc925d69/)
   - DicVectorizer : 단어의 수를 세어놓은 사전에서 BOW 벡터를 만든다.
   - CountVectorizer: 문서 집합으로부터 단어의 수를 세어 BOW 벡터를 만든다.
   - Tfidfvectorizer: 문서 집합으로부터 단어의 수를 세고 TF-IDF 방식으로 단어의 가중치를 조정한 BOW 벡터를 만든다.(CounterVectorizer의 서브클래스로 CountVectorizer를 이용해 BOW를 만들고 TfidTransformer를 사용해 tf-idf로 변환)
@@ -46,9 +46,10 @@ NLP (Natural Language Processing, 자연어처리)는 텍스트에서 의미있�
 
 ### Frequency based Embedding : 횟수 기반 임베딩
 #### Bag of Words(BOW) : 단어들의 출연 빈도만으로 단어 사전(주머니) 만들기
+- [더 알고 싶은 사람 참고링크](https://wikidocs.net/22650)   
 - I have an apple. and I want to eat an apple.
 → [I, have, an, apple, and, want, to, eat]
-- [더 알고 싶은 사람 참고링크](https://wikidocs.net/22650)
+
 |Terms|Index|Count|
 |----|----|----|
 |I|0|2|
@@ -66,7 +67,7 @@ NLP (Natural Language Processing, 자연어처리)는 텍스트에서 의미있�
 - Number of Tokens : [‘He’,’She’,’lazy’,’boy’,’Neeraj’,’person’]
     
 |Terms|D1|D2|
-|----|----|----|
+|----|---|---|
 |He|1|0|
 |She|1|0|
 |lazy|2|1|
