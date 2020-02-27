@@ -7,4 +7,5 @@
 Natural language processing
 
 ### 참고 문서
-[자연어(NLP) 처리 기초 정리](http://hero4earth.com/blog/learning/2018/01/17/NLP_Basics_01/)
+[자연어(NLP) 처리 기초 정리](http://hero4earth.com/blog/learning/2018/01/17/NLP_Basics_01/)   
+[NLP 형태소 분석 알고리즘](https://ra2kstar.tistory.com/170)   
