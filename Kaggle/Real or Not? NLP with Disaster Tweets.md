@@ -79,12 +79,12 @@ NLP (Natural Language Processing, 자연어처리)는 텍스트에서 의미있�
 
 ### Prediction Based Embedding : 예측 기반 벡터
 #### Word2Vec : CBOW와 Skip-gram방식의 알고리즘을 이용한 word-embedding
-![image](https://user-images.githubusercontent.com/48716298/75445629-25fe7680-59a9-11ea-9538-953ca22a5b91.png)
+![image](https://user-images.githubusercontent.com/48716298/75445629-25fe7680-59a9-11ea-9538-953ca22a5b91.png)   
 MAN과 WOMAN의 거리는 KING과 QUEEN의 거리와 유사하다
 
 #### CBOW(Continuous Bag of Words) : 문장에서 한 단어 앞뒤로 붙어있는 단어들을 통해서 해당 단어 유추하는 방법
 - 나는 추운 겨울보다 _ 여름이 좋아" 에서 "겨울보다"와 "여름이"를 통해 _ 을 "따뜻한"으로 유추
-![image](https://user-images.githubusercontent.com/48716298/75445680-429aae80-59a9-11ea-965e-69560b0d14d3.png)
+![image](https://user-images.githubusercontent.com/48716298/75445680-429aae80-59a9-11ea-965e-69560b0d14d3.png)   
 Input layer : ["겨울보다", "여름이"]  → Hidden layer(가중치:w) → Output layer : ["따뜻한"] (One-hot-encoding)
 단점 : "따뜻한 여름이" 에서의 "따뜻한"과 "마음이 따뜻한"에서의 "따뜻한"이 같이 쓰일경우 문제가 발생
 
