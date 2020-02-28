@@ -29,3 +29,14 @@ let name = "아름";
 console.log(name);
 output: Identifier 'name' has already been declared
 ```
+
+### array, object 선언 방법
+array를 선언할 때는 []   
+object를 선언할 때는 {}   
+```javascript
+const areumInfo = {
+  name : "Areum", // 변수임, 접근하려면 areumInfo.name 사용
+  age : 393940,
+  job : "student"
+}
+```
