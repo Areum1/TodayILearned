@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .row {
+            width: 150px;
+        }
+        #form {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            /*가운데로 보내줌*/
+            width: 500px;
+            height: 550px;
+            border: 2px black solid;
+        }
+        table{
+            margin-top:20px;
+            margin-bottom: 20px;
+        }
+    </style>
+
+</head>
+
+<body>
+    
+    <form id="form" method="POST" action="join.php">
+        <h3>[회원가입]</h3>
+        <table>
+            <tr>
+                <td class="row">회원 id</td>
+                <td><input type="text" name="user_id">&nbsp;[ID 중복검사]</td>
+            </tr>
+            <tr>
+                <td class="row">비밀번호</td class="row">
+                <td><input type="password" name="user_pw"></td>
+            </tr>
+            <tr>
+                <td class="row">비밀번호 확인</td class="row">
+                <td><input type="password" name="user_pw_check"></td>
+            </tr>
+            <tr>
+                <td class="row">이름</td class="row">
+                <td><input type="text" name="user_name"></td>
+            </tr>
+            <tr>
+                <td class="row">성별</td class="row">
+                <td>
+                    <input type="radio" name="user_sex" value="man">남성
+                    <input type="radio" name="user_sex" value="woman">여성
+                </td>
+            </tr>
+            <tr>
+                <td class="row">집전화</td class="row">
+                <td><input type="tel" name="user_home"></td>
+            </tr>
+            <tr>
+                <td class="row">휴대전화</td class="row">
+                <td><input type="tel" name="user_phone"></td>
+            </tr>
+            <tr>
+                <td class="row">이메일</td class="row">
+                <td><input type="email" name="user_email"></td>
+            </tr>
+            <tr>
+                <td rowspan="3" class="row">주소</td>
+                <td><input type="text" name="user_code" placeholder="우편번호"> <button type="button">우편번호 찾기</button>
+                </td>
+            </tr>
+            <tr>
+                <td><input type="text" name="user_road" placeholder="도로명주소">&nbsp;<input type="text" name="id"
+                        placeholder="지번주소">
+                </td>
+            </tr>
+            <tr>
+                <td><input type="text" name="user_other" placeholder="나머지 주소"></td>
+            </tr>
+            <tr>
+                <td class="row" style="width:150px;">취미</td class="row">
+                <td><input type="checkbox" name="hobby[]" value="운동">운동
+                    <input type="checkbox" name="hobby[]" value="여행">여행
+                    <input type="checkbox" name="hobby[]" value="낚시">낚시
+                </td>
+            </tr>
+            <tr>
+                <td class="row">알게된 계기</td>
+                <td><select name="list1[]" size="1" multiple>
+                        <option value="sns">sns</option>
+                        <option value="잡지">잡지</option>
+                        <option value="인터넷">인터넷</option>
+                        <option value="신문">신문</option>
+                        <option value="tv">tv</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+        <input type="submit" value="회원가입하기" id="button">
+    </form>
+</body>
+
+</html>
