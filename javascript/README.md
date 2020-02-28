@@ -40,3 +40,7 @@ const areumInfo = {
   job : "student"
 }
 ```
++ console.log할때 console도 object이다.
+
+### 함수란?
+같은 작업을 반복해주는 것
