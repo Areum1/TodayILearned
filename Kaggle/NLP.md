@@ -3,6 +3,9 @@
 ## 대회 한국어 정리
 [한국어 정리](https://docs.google.com/document/d/1LE7l6mHfATnk-blpOV9L1jyJvwKVrzP7ZUPdIUBEwGs/edit?usp=sharing)
 
+## NLP 강좌 보고 정리
+[CountVectorizer로 데이터 벡터화](https://colab.research.google.com/drive/1uuEBZf4gO_GNkZtKxYDUMmHf4s5eEQHS)
+
 ## NLP 정리
 NLP (Natural Language Processing, 자연어처리)는 텍스트에서 의미있는 정보를 분석, 추출하고 이해하는 일련의 기술집합
 ### NLP 응용 사례
