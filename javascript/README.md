@@ -44,3 +44,11 @@ const areumInfo = {
 
 ### 함수란?
 같은 작업을 반복해주는 것
+
+### console.log로 프린트 하는 방법
+```javascript
+function sayHello (name, age){
+  console.log("Hello", name, " you are ", age, " years old ";
+  console.log(`Hello ${name} you are ${age} years old`);
+}
+```
