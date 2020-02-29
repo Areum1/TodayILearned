@@ -52,3 +52,9 @@ function sayHello (name, age){
   console.log(`Hello ${name} you are ${age} years old`);
 }
 ```
+
+### js에서 아이디가 title인 h1 부르는 방법
+```javascript
+const title = document.querySelector("#title");
+const title = document.getElementsById("title");
+```
