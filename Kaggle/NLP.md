@@ -86,7 +86,7 @@ NLP (Natural Language Processing, 자연어처리)는 텍스트에서 의미있�
 ![image](https://user-images.githubusercontent.com/48716298/75445629-25fe7680-59a9-11ea-9538-953ca22a5b91.png)   
 MAN과 WOMAN의 거리는 KING과 QUEEN의 거리와 유사하다
 
-#### CBOW(Continuous Bag of Words) : 문장에서 한 단어 앞뒤로 붙어있는 단어들을 통해서 해당 단어 유추하는 방법
+#### CBOW(Continuous Bag of Words) : 문장에서 한 단어 앞뒤로 붙어있는 단어들을 통해서 해당 단어 유추하는 방법 (데이터셋이 작을 때 유리)
 - 나는 추운 겨울보다 _ 여름이 좋아" 에서 "겨울보다"와 "여름이"를 통해 _ 을 "따뜻한"으로 유추
 ![image](https://user-images.githubusercontent.com/48716298/75445680-429aae80-59a9-11ea-965e-69560b0d14d3.png)   
 Input layer : ["겨울보다", "여름이"]  → Hidden layer(가중치:w) → Output layer : ["따뜻한"] (One-hot-encoding)
@@ -97,7 +97,7 @@ Input layer : ["겨울보다", "여름이"]  → Hidden layer(가중치:w) → O
 3) 평소보다 두 __로 많이 먹어서 __가 아프다.
 ```
 
-#### Skip-gram : CBOW와 Input Output의 Layout구조만 반대. 손실함수는 CBOW와 같다
+#### Skip-gram : CBOW와 Input Output의 Layout구조만 반대. 손실함수는 CBOW와 같다 (데이터셋이 클 때 유리)
 Input layer : ["따뜻한"] → Hidden layer(가중치:w) → Output layer : ["겨울보다", "여름이"]
 장점 : 한 단어와 연관된 두 가지 이상의 의미론적 벡터를 찾을 수 있다. → CBOW보다 결과가 더 좋다고 확인됐다.
 ```
