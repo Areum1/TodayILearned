@@ -58,3 +58,13 @@ function sayHello (name, age){
 const title = document.querySelector("#title");
 const title = document.getElementsById("title");
 ```
+
+### js에서 event 받는 방법
+```javascript
+function handleResize(){
+    console.log("I have been resized");
+}
+
+window.addEventListener("resize", handleResize); 
+//handleResize에 ()를 붙이면 이 곳에서 즉시 실행해달라는 뜻, 안 붙이면 resize라는 이벤트가 생길 시 실행
+```
