@@ -76,10 +76,80 @@ for(value of str){ //문자열 돌 때
 
 //////////////////////////////////////////////////////
 
+// spread operator, 펼침 연산자
+let pre =["apple", "orange",100];
+let newData = [...pre];
+console.log(pre,newData);
+
 //////////////////////////////////////////////////////
+
+let pre = [100,200,"hello",null];
+let newData = [0,1,2,3, ...pre,4];
+console.log(newData);
+
 //////////////////////////////////////////////////////
+
+function sum(a,b,c){
+    return a+b+c;
+}
+
+let pre = [100,200,300];
+
+
+console.log(sum.apply(null, pre));
+console.log(sum(...pre));
+
 //////////////////////////////////////////////////////
+
+// ES2015 from method
+function addMark(){
+    let newArray = Array.from(arguments);
+    // for(let i=0; i<arguments.length; i++){ //인자값을 가지고 옴 (argument)
+    //     newData.push(arguments[i]+"!");
+    // }
+
+    let newData = newArray.map(function(value){
+        return value+"!";
+    })
+    console.log(newData);
+}
+addMark(1,2,3,4,5);
+
 //////////////////////////////////////////////////////
+
+// const name = "crong";
+// const age = 33;
+
+// const obj = {
+//     name : name,
+//     age : age
+// };
+
+// console.log(obj);
+
+function getObj(){
+    const name = "crong";
+    const getName = function(){
+        return name;
+    }
+
+    const setName = function(newname){
+        name = newname;
+    }
+
+    const printName = function(){
+        console.log(name);
+    }
+
+    return {
+        getName : getName,
+        setName : setName
+    };
+}
+
+var obj = getObj();
+console.log(obj)
+
 //////////////////////////////////////////////////////
 //////////////////////////////////////////////////////
 //////////////////////////////////////////////////////
