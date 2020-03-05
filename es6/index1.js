@@ -44,8 +44,38 @@ list2 = [].concat(list,"banana");
 console.log(list === list2);
 
 //////////////////////////////////////////////////////
+
+// ES2015 string에 새로운 메서드들
+
+let str = "hello world ! ^^ ~~";
+let matchstr = "^ ~~";
+console.log(str.startsWith(matchstr));
+console.log(str.endsWith(matchstr));
+console.log(str.includes("world"));
+
 //////////////////////////////////////////////////////
+
+var data = [1,2,undefined,NaN,null,""];
+// data.forEach(function(value){
+//     console.log(value);
+// })
+
+// for(let idx in data){
+//     console.log(data[idx]);
+// }
+
+// for(let value of data){
+//     console.log(value);
+// }
+
+var str = "hello world!!!!!";
+
+for(value of str){ //문자열 돌 때
+    console.log(value);
+}
+
 //////////////////////////////////////////////////////
+
 //////////////////////////////////////////////////////
 //////////////////////////////////////////////////////
 //////////////////////////////////////////////////////
