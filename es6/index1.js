@@ -528,8 +528,56 @@ const newobj = Object.setPrototypeOf({
 console.log("my health is",newobj);
 
 //////////////////////////////////////////////////////
+
+// setPrototypeOf
+
+// parent
+const healthObj = {
+    showHealth : function(){
+        console.log("오늘 운동시간 : " + this.healthTime);
+    },
+    setHealth : function(newTime){
+        this.healthTime = newTime;
+    }
+}
+
+//child obj
+const healthChildObj = {
+    getAge : function(){
+        return this.age;
+    }
+}
+
+Object.setPrototypeOf(healthChildObj,healthObj);
+
+const childObj = Object.setPrototypeOf({
+    age : 22
+}, healthChildObj);
+
+childObj.setHealth("11:55");
+childObj.showHealth();
+console.log("childobj is ",childObj);
+
 //////////////////////////////////////////////////////
+
+import {log} from './myLogger.js';
+// import log from './myLogger.js'; myLogger.js에서 default쓰면 {} 안써도 괜찮
+
+const root = document.querySelector('#root');
+root.innerHTML= '<p>Hello World!</p>'
+log('my first test data');
+
 //////////////////////////////////////////////////////
+
+import CodeSquad from './CodeSquad.js';
+import _ from './utility.js'
+
+_.log('my first test data');
+
+const cs = new CodeSquad();
+_.log(`current hour is ${cs.getCurrentHour()}`);
+_.log(`lectures of Codesquad are ${cs.getLectures()}`);
+
 //////////////////////////////////////////////////////
 //////////////////////////////////////////////////////
 //////////////////////////////////////////////////////

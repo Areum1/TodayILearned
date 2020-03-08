@@ -1,28 +1,15 @@
-// setPrototypeOf
-
-// parent
-const healthObj = {
-    showHealth : function(){
-        console.log("오늘 운동시간 : " + this.healthTime);
+// Proxy.
+// const myObj = {name : 'crong', changedValue : 0};
+const proxy = new Proxy({name : 'crong', changedValue : 0}, {
+    get : function(target,property,receiver){
+        // console.log('get value');
+        // return target[property];
+        // return Reflect.get(target,property);
+        return (property in target) ? target[property] : "anonymous";
     },
-    setHealth : function(newTime){
-        this.healthTime = newTime;
+    set : function(target,property,value){
+        console.log('change value');
+        target['changedValue']++;
+        target[property] = value;
     }
-}
-
-//child obj
-const healthChildObj = {
-    getAge : function(){
-        return this.age;
-    }
-}
-
-Object.setPrototypeOf(healthChildObj,healthObj);
-
-const childObj = Object.setPrototypeOf({
-    age : 22
-}, healthChildObj);
-
-childObj.setHealth("11:55");
-childObj.showHealth();
-console.log("childobj is ",childObj);
+});
