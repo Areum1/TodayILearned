@@ -1,6 +1,10 @@
-const myfun = () => {
-    let name = "crong";
-    console.log(`my name is ${name}`);
-}
+import blog from './main.js';
 
-myfun();
+const myblog = new blog();
+
+// const myfun = () => {
+//     let name = "inflearn";
+//     console.log(`my name is ${name}`);
+// }
+
+// myfun();
