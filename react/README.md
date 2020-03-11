@@ -1,2 +1,8 @@
-# 리액트 스터디 📚
-리액트를 다루는 기술을 읽고 스터디하는 공간입니다
+# 리액트 스터디 
+
+```reactjs
+function App() {
+  return <div>Hello!!!</div>;
+}
+component는 HTML을 반환하는 함수
+```
