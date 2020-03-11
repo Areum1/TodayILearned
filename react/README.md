@@ -1,5 +1,8 @@
 # 리액트 스터디 
 
+### 단축키
+Ctrl + Shift + L => 여러줄에 있는 단어 한번에 선택 후 수정가능
+Ctrl + Alt + (방향키) => 여러줄 같은 위치 단어 수정가능
 
 ### component란?
 ```javascript
@@ -12,5 +15,16 @@ component는 HTML을 반환하는 함수
 ### jsx란?
 ```javascript
 ReactDOM.render(<App />, document.getElementById('root'));
+<Food fav="kimchi" /> // child가 father에게 정보보냄
+
 ```
 javascript와 HTML의 이러한 조합(<App />)을 JSX라고 부른다
+
+### map이란?
+```javascript
+friend.map(function(friend){
+    return friend+" ❤";
+})
+결과 : (4) ["dal ❤", "lynn ❤", "girl ❤", "boy ❤"]
+```
+조건을 취하고 그 조건에 맞게 array를 return 해줌
