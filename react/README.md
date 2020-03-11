@@ -1,6 +1,8 @@
 # 리액트 스터디 
 
-```reactjs
+
+### component란?
+```javascript
 function App() {
   return <div>Hello!!!</div>;
 }
