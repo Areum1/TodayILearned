@@ -28,3 +28,8 @@ friend.map(function(friend){
 결과 : (4) ["dal ❤", "lynn ❤", "girl ❤", "boy ❤"]
 ```
 조건을 취하고 그 조건에 맞게 array를 return 해줌
+
+### class component VS Function component
+Function component => function으로 무언가를 return 후 screen에 표시   
+class component => react component로부터 확장된 뒤 screen에 표시 (무조건 render() 안에 넣어야함) + state라는 object가 있음 (바뀔 data 저장소 같은 느낌?)   
+[참고](https://overreacted.io/ko/how-are-function-components-different-from-classes/)   
