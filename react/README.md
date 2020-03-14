@@ -36,7 +36,7 @@ class component => react component로부터 확장된 뒤 screen에 표시 (무�
 
 ### Mounting
 => 태어나는 것?
-- constructor
+- constructor   
 먼저 호출되는 function이 하나 있는 constructor(class 만들 때 호출되는 것)
 - render 
 - componentDidMount()
@@ -44,7 +44,7 @@ class component => react component로부터 확장된 뒤 screen에 표시 (무�
 ### Updating
 => 나로 인해 업데이트가 일어남 (state를 변경할 때 등)
 - render
-- componentDidUpdate()
+- componentDidUpdate()    
 setstate()가 변경되어서 일어남
 
 ### Unmounting
