@@ -33,3 +33,20 @@ friend.map(function(friend){
 Function component => function으로 무언가를 return 후 screen에 표시   
 class component => react component로부터 확장된 뒤 screen에 표시 (무조건 render() 안에 넣어야함) + state라는 object가 있음 (바뀔 data 저장소 같은 느낌?)   
 [참고](https://overreacted.io/ko/how-are-function-components-different-from-classes/)   
+
+### Mounting
+=> 태어나는 것?
+- constructor
+먼저 호출되는 function이 하나 있는 constructor(class 만들 때 호출되는 것)
+- render 
+- componentDidMount()
+
+### Updating
+=> 나로 인해 업데이트가 일어남 (state를 변경할 때 등)
+- render
+- componentDidUpdate()
+setstate()가 변경되어서 일어남
+
+### Unmounting
+=> component가 죽을 때
+- componentWillUnmount()
