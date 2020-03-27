@@ -1,0 +1,28 @@
+package com.example.demo;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class MyController {
+	
+	@RequestMapping("/hello")
+	public String hello() {
+		return "<h1>Hello</h1>";
+	}
+	
+	@RequestMapping("/bye")
+	public String bye() {
+		return "<h1>bye</h1>";
+	}
+	
+	@RequestMapping(value="/post", method=RequestMethod.POST)
+	public String post() {
+		return "<h1>Post</h1>";
+	}
+	
+	@PostMapping("post2")
+	public String post2() {
+		return "<h1>Post2</h1>";
+	}
+}
