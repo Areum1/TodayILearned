@@ -1,6 +1,6 @@
 # Spring Study
 
-### [스프링부트](https://start.spring.io/) 용어들 정리
+### [스프링 이니셜라이즈](https://start.spring.io/) 용어들 정리
 Gruoup : com.example (회사 도메인)   
  artifact : demo (앱 이름) => DemoApplication   
  => 기본 패키지 이름 : com.example.demo   
