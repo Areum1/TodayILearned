@@ -1,7 +1,7 @@
 # Spring Study
 
 ### [스프링 이니셜라이즈](https://start.spring.io/) 용어들 정리
-Gruoup : com.example (회사 도메인)   
+Group : com.example (회사 도메인)   
  artifact : demo (앱 이름) => DemoApplication   
  => 기본 패키지 이름 : com.example.demo   
     
@@ -39,3 +39,16 @@ html 내용을 동적으로 생성
 <p> {{ person.name }} </p>
 ```
 많이 쓰는 템플릿 엔진 : jsp, thymeleaf, tiles, ....    
+
+템플릿 받아서 값 끼워서 최종 결과물 만들어주는 애 => 템플릿 엔진   
+
+틀(html) 받아서 모델 (객체 혹은 변수)를 이용하여 최종 html 문서 생성 후 반환   
+
+resources/templates 폴더 안에 템플릿 파일 저장   
+
+### 모델의 역할
+동적 웹 페이지에 사용할 재료(데이터) 보관   
+모델도 키를 통하여 값을 저장함   
+
+### 맵(Map) 자료구조의 특징
+키를 통해서 값을 저장 (파이썬의 dict)   
