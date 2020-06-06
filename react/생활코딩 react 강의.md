@@ -1,6 +1,6 @@
 ## 4강~5강 (react 설치하기)
 
-```react
+```javascript
 npm -v
 npm install -g create-react-app
 
@@ -14,7 +14,7 @@ Visual Studio Code > 보기 (View) > 모양 (Apperance) > 패널 표시 (Toggle 
 
 패널로 명령어 실행 가능
 
-```react
+```javascript
 npm run start
 // ctrl + c로 실행 취소
 ```
@@ -25,14 +25,14 @@ scr 폴더 : 코딩할 때 거의 매번 사용할 폴더 (엔트리 파일 들�
 
 public 폴더 : index.html (실행하는 파일)이 들어있는 폴더
 
-```react
+```javascript
 import App from './App'; // App.js (js 생략), 파일 이름과 import 뒤 이름 같아야 함
 <App/> // 사용자 정의 태그 (컴포넌트) 위에 있는 import의 파일을 실행
 ```
 
 App.js
 
-```react
+```javascript
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
@@ -62,13 +62,13 @@ body {
 
 ## 9강 (배포하는 법)
 
-```react
+```javascript
 npm run build
 ```
 
 build 폴더 생김 (index.html 파일 들어가보면 불필요한 공백들 다 삭제)
 
-```react
+```javascript
 npx serve -s build
 // npm install -g serve와 비슷함 하지만 한 번만 실행시키는 웹서버 완성
 ```
