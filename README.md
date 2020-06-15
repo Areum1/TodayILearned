@@ -5,6 +5,7 @@
 [Kaggle](Kaggle/)  
 [Unity](Unity/)    
 [AI](AI/)    
+[Algorithm](Algorithm/)    
 [Flutter](flutter/)   
 [Javascript](javascript/)   
 [Php](php/)   
