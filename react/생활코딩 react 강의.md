@@ -6,6 +6,9 @@ npm install -g create-react-app
 
 // 원하는 폴더로 가기
 create-react-app .
+
+// npm VS npx
+npx 는 임시로 프로그램을 설치해서 딱 한 번만 
 ```
 
 ## 6강 (샘플 웹앱 실행)
