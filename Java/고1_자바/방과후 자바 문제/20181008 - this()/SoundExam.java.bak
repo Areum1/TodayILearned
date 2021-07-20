@@ -1,0 +1,35 @@
+interface Sound {
+	public void SoundUp(int level);
+	public void SoundDown(int level);
+}
+class TV implements Sound {
+	int SndLevel=0;
+	public void SoundUp(int level)
+		for (int i = 1; i <= level; i++)
+		SndLevel++;
+	}
+	public void SoundDown(int level){
+		for (int i = 1; i <= level; i++)
+		SndLevel--;
+	}
+}
+class Radio implements Sound {
+	int SndLevel=0;
+	public void SoundUp(int level){
+		for (int i = 1; i <= level; i++)
+		SndLevel++;
+
+	}
+	public void SoundDown(int level){
+		for (int i = 1; i <= level; i++)
+		SndLevel--;
+	}
+}
+class SoundExam {
+	public static void main (String ar[]) {
+	Radio radio = new Sound();
+	TV tv = new Sound();
+	System.out.println(radio.SoundUp(5));
+	System.out.println(tv.SoundUp(5));
+	}
+}

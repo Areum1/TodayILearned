@@ -1,0 +1,24 @@
+import java.util.*;
+class c_37 {
+public static void main(String ar[]){
+	Scanner sc = new Scanner (System.in);
+	int a;
+	String day[];
+	day = new String[] { "일","월","화","수","목","금","토" };
+	while (true) {
+	a = sc.nextInt();
+	switch (a%7) {
+	case 0: System.out.println(day[0]); break;
+	case 1: System.out.println(day[1]); break;
+	case 2: System.out.println(day[2]); break;
+	case 3: System.out.println(day[3]); break;
+	case 4: System.out.println(day[4]); break;
+	case 5: System.out.println(day[5]); break;
+	case 6: System.out.println(day[6]); break;
+	}
+	if (a < 0){
+		 System.out.println("프로그램 종료.");
+		 break; }
+	}
+	}
+}

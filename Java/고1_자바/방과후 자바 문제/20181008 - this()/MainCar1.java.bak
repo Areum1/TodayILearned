@@ -1,0 +1,37 @@
+class Car {
+private int speed; // 속도
+int wheel; // 바퀴수
+public String irum; // 차 소유주 이름
+public Car() { }
+
+public Car(int speed) {
+this.speed = speed;
+}
+public Car(int speed, int wheel) {
+this(speed);
+this.wheel = wheel;
+}
+public Car(int wheel, String irum) {
+this.wheel = wheel;
+this.irum = irum;
+}
+/*public ㉡ {
+19. return speed;
+20. }*/
+public void display() {
+	System.out.print("df");
+System.out.println("이름:" + this.irum + ",속도:" + this.speed + ", 바퀴수:" + this.wheel);
+}
+// ㉢
+public void display(String irum, int speed, int wheel) {
+	System.out.print("df");
+System.out.println("이름:" + irum + ", 속도:" +speed + ", 바퀴수:" + wheel);
+}
+}
+class MainCar1 {
+public static void main(String[] args) {
+Car jihyang = new Car(50,3);
+jihyang.display(); //<------------ ㉤
+System.out.println();
+}
+}

@@ -1,0 +1,12 @@
+class plushw_3 {
+	public int plus(int a,int sum) {
+		for(a = 1; a<=5; a++){
+			sum +=a;
+		}
+		return sum;
+	}
+public static void main(String ar[]){
+	plushw_3 hw = new plushw_3();
+	System.out.println(hw.plus(1,0));
+	}
+}

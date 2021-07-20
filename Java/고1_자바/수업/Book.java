@@ -1,0 +1,52 @@
+class Book {
+	private String title;
+	private String author;
+	private String publish;
+	private int price;
+
+	Book (String title,String author, String publish, int price) {
+		this.title = title;
+		this.author = author;
+		this.publish = publish;
+		this.price = price;
+	}
+
+	Book (String title,String author) {
+		this.title = title;
+		this.author = author;
+	}
+
+	Book (String title,String author, int price) {
+		this.title = title;
+		this.author = author;
+		this.price = price;
+	}
+
+	Book() {}
+
+	public void setTitle(String title){
+		this.title = title;
+	}
+	public void setAuthor(String author){
+		this.author = author;
+	}
+	public String getTitle(){
+		return title;
+	}
+	public String getAuthor(){
+		return author;
+	}
+
+  public static void main(String a[]) {
+    Book b1=new Book("A","aa","aaa",100);
+    Book b2=new Book("B","bbb");
+    Book b3=new Book("C","cc", 200);
+    Book b4=new Book();
+    //b4¿« setTitle, getTitle, setAuthor, getAuthor »£√‚
+
+	b4.setTitle("dd");
+	b4.setAuthor("dfajlh");
+	System.out.println(b4.getTitle());
+	System.out.println(b4.getAuthor());
+    }
+}

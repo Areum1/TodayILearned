@@ -1,0 +1,10 @@
+
+public class AccountMain {
+	public static void printAccount() {
+		System.out.println();
+	}
+	public static void main(String args[]) {
+		Account a1 = new Account("111-222-3333333","±è¿µ½Ä",200000);
+		Account a2 = new Account("555-666-7777777","¹ÚÁøÈñ",800000);
+	}
+}

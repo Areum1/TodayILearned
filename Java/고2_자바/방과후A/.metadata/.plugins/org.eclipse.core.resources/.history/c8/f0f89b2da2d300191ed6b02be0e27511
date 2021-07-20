@@ -1,0 +1,8 @@
+
+public class AnimalFind {
+
+	public void Find(Ani_cow cow) {
+		System.out.println(lion.name()+" "+lion.action()+' '+lion.eat() + " ∏‘¿Ω");
+	}
+	
+}

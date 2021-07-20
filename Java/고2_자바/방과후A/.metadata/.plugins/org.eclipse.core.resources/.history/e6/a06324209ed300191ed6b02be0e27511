@@ -1,0 +1,11 @@
+
+abstract public class Animal {
+
+	public String name() {
+		return null;
+	}
+	
+	abstract public String eat(); //추상클래스
+	//존재할 수 없는데 자식들이 오버라이딩 재정의 해줘야 쓸 수 있음
+	//클래스가ㅣ abstract 를 하나라도 가지고 있으면 써줘야함
+}

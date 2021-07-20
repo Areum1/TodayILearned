@@ -1,0 +1,27 @@
+
+public class CheckingAccount extends Account {
+	String cardNo;
+	
+	public CheckingAccount(String a, String o, int b, String c) {
+		this.accountNo = a;
+		this.balance = b;
+		this.cardNo = c;
+		this.ownerName = o;
+	}
+	
+	
+	public int pay(String cardNo, int amount) {
+		if(this.cardNo == cardNo && amount < balance) {
+			System.out.println("지불액 : "+ amount);
+			balance -= amount;
+			System.out.println("잔액 : "+balance);
+		}
+		else {
+			System.out.println("지불이 불가능 합니다.");
+			System.out.println("지불액 : "+amount);
+			System.out.println("잔액 : "+balance);
+		}
+		return 0;
+	}
+	
+}

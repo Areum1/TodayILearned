@@ -1,0 +1,8 @@
+
+public class MainTest {
+
+	public static void main(String[] args) {
+		Ani_cow cow = new Ani_cow();
+	}
+	
+}

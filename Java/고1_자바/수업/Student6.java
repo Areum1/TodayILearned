@@ -1,0 +1,18 @@
+class Student6 {
+private String name;
+private int grade;
+static int count = 0;
+
+Student6 () {
+	count++;
+}
+
+public static void main(String ar[]) {
+	Student6 s1 = new Student6();
+	Student6 s2 = new Student6();
+	Student6 s3 = new Student6();
+	Student6 s4 = new Student6();
+	Student6 s5 = new Student6();
+	System.out.println("생성된 학생의 객체수는 "+Student6.count+" 입니다");
+}
+}

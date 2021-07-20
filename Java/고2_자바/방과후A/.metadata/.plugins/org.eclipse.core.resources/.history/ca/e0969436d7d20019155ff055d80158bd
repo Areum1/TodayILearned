@@ -1,0 +1,17 @@
+
+public class MyFamily {
+
+	public static void main(String[] args) {
+		
+		//객체를 어떻게 만들어? 생성자 호출해서
+		Father fa = new Father();
+		fa.show();
+		
+		Me me = new Me();
+		
+		GrandFa gr = new GrandFa();
+		
+		System.out.println("===========================");
+		
+	}
+}

@@ -1,0 +1,17 @@
+import java.util.*;
+class c_35 {
+public static void main(String ar[]){
+	Scanner sc = new Scanner(System.in);
+	int s;
+char x;
+        System.out.print("키보드를 통해 하나의 문자를 입력하세요 = ");
+        x = (char)System.in.read();
+		System.in.read();
+		System.in.read();
+	s = (int)x;
+	for (int i = s; i<122; i++)
+	{
+		System.out.println((char)i);
+	}
+	}
+}

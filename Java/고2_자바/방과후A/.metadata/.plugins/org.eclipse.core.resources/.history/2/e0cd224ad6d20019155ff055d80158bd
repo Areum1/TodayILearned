@@ -1,0 +1,10 @@
+
+public class Me extends Father{
+
+	public Me() {
+		super();
+	}
+	
+	Me me = new Me();
+	
+}

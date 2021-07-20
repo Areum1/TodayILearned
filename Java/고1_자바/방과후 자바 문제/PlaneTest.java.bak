@@ -1,0 +1,31 @@
+class Plane {
+	final int planes = 3;
+	private String prod;
+	private String model;
+	private int max;
+	public void setProd() {
+		this.prod = prod; }
+	public void setModel() {
+		this.model = model; }
+	
+	public String getProd() {
+		return prod; }
+	public String getModel(){
+		return model; }
+	public int getMax(){
+		return max; }
+	Plane (String prod){
+		this.prod = prod;
+	}
+	Plane (String prod, int max) {
+		this.prod = prod;
+		this.max = max;
+	}
+}
+class PlaneTest extends Plane{
+	public static void main(String ar[]){
+		Plane p1 = new Plane("Korean Air");
+		Plane p2 = new Plane("Asiana", 500);
+		System.out.println(p1.getProd());
+	}
+}

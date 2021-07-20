@@ -1,0 +1,20 @@
+import java.awt.*;
+
+public class imp_Test6 extends Frame {
+	public imp_Test6 (){
+		super("로그인");
+		Panel p = new Panel();
+		TextField tf1 = new TextField("아이디");
+		TextField tf2 = new TextField(20);
+		tf1.selectAll();
+		tf2.setEchoChar('*');
+		p.add(tf1);
+		p.add(tf2);
+		add(p);
+		setSize(400,200);
+		setVisible(true);
+}
+public static void main(String ar[]) {
+	new imp_test6();
+}
+}

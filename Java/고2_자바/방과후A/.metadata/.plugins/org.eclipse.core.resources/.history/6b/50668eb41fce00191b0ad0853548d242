@@ -1,0 +1,27 @@
+// 클래스와 객체는 다르다
+// 클래스에 객체를 넣는걸 인스턴스화라고 한다 (new)
+// 멤버변수 메서드 생성자
+
+public class GrandFa { //각각의 변수에 정보은닉화 한 것을 캡슐화를 했다고 함
+	
+	private int nai = 80; //접근제어자를 붙이는 것 정보 은닉화
+	// 정보은닉이 뭐예요? 정보에 대한 권한을 수행할 수 있도록 하는 것 (information hiding)
+	//public 모든 사람들 사용 가능, 데이터 훼손 위험성
+	public String gabo = "상감청자";
+	protected String gahun = "모든 일에 최선을";
+	
+	public GrandFa(int nai, String gabo, String gahun) {
+		super();
+		this.nai = nai;
+	}
+
+
+
+	public int getNai() {
+		return nai;
+	}
+}
+
+// 9월 3일
+// 생성자 오버로딩 : 같은 이름을 가지고 있는 생성자를 많이 만들면 된다
+// JVM이 기본생성자 만들어줌

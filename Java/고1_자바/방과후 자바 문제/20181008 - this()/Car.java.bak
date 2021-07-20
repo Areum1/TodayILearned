@@ -1,0 +1,30 @@
+class Car {
+	String brand;
+	int price;
+	String owner;
+	String color;
+
+	Car (String brand,int price, String owner,String color) {
+		this(brand,price,color);
+		this.price = 10000;
+	}
+	Car(String brand, int price, String color) {
+		this(brand,color);
+	}
+	Car(String color) {
+		this.color = "Blue";
+	}
+	Car(String brand, String color) {
+		this.owner = "¾ç¾Æ¸§";
+		this.brand = "Samsung";
+		this.color = "Green";
+		this(color);
+	}
+	public static void main (String ar[]) {
+		Car c = new Car("Sonata",100,"Mike","Red");
+		System.out.println(c.brand);
+		System.out.println(c.price);
+		System.out.println(c.color);
+		System.out.println(c.owner);
+	}
+}

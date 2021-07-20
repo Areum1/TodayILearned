@@ -1,0 +1,4 @@
+
+public class DBAnalyst extends Employee {
+
+}

@@ -1,0 +1,20 @@
+
+public class Radio implements Volume {
+	// 오버라이딩 안 해줘서 에러생김
+	
+	private int volLevel;
+	
+	@Override
+	public void volumeUp(int level) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void volumeDown(int level) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	
+}

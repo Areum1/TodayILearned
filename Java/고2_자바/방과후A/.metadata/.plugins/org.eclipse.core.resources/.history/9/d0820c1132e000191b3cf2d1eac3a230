@@ -1,0 +1,10 @@
+
+public class CheckingAccountMain extends CheckingAccount {
+
+	public static void main(String[] args) {
+		CheckingAccount ca = new CheckingAccount();
+		
+
+	}
+
+}

@@ -1,0 +1,4 @@
+class hw0623_5 {
+public static void main(String ar[]){
+	System.out.println(ar[0]);
+	int a = Integer.parseInt(ar[0]);

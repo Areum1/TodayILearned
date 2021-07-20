@@ -1,0 +1,8 @@
+class cat2 extends Animal2 {
+	public void eat() {
+		System.out.println("생선을 먹다");
+	}
+	public void Scratch() {
+		System.out.println("스크래치");
+	}
+}

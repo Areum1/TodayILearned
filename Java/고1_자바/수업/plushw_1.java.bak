@@ -1,0 +1,5 @@
+class plushw_1 {
+	public void plus(){
+		System.out.println(1+2+3+4+5);
+	}
+}

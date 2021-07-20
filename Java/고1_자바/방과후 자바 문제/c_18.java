@@ -1,0 +1,22 @@
+import java.util.*;
+class c_18{
+public static void main(String ar[]) {
+Scanner sc = new Scanner(System.in);
+int a, speed = 0;
+System.out.println("1. 속도 증가, 2. 속도 감소, 3. 종료");
+	while(true){
+		a = sc.nextInt();
+	if(speed <100){
+		if(a==1)
+			speed = speed +10;
+		else if (a == 2)
+			speed = speed -10;
+		else if (a ==3)
+			break;
+	}// if
+	else if(speed <0 || speed >=100 || a>=4)
+		break;
+	System.out.println("속도 : "+speed);
+}// while
+}
+}

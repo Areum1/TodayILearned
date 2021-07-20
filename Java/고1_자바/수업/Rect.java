@@ -1,0 +1,7 @@
+class Rect extends Shape{
+	public static void main (String ar[]){
+		Shape s = new Shape();
+		s.setArea(5,6);
+		System.out.println((int)s.getArea());
+	}
+}

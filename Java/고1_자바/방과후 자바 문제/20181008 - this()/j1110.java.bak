@@ -1,0 +1,78 @@
+import java.util.*;
+class Product {
+	private String name;
+	private int price;
+	private int count;
+	Product(String n, int p, int c) {
+		this.name = n;
+		this.price = p;
+		this.count = c;
+	}
+
+	public void setName(String n) {
+		this.name = n;
+	}
+	public void setPrice(int p) {
+		this.price = p;
+	}
+	public void setCount(int c) {
+		this.count = c;
+	}
+	public String getName() {
+		return name;
+	}
+	public int getCount() {
+		return count;
+	}
+	public int getPrice() {
+		return (price*count);
+	}
+	public void pr() {
+		System.out.println("이름: "+name+", 가격: "+getPrice());
+	}
+	public String toString(){
+		return "이름: "+name+", 가격: "+getPrice();
+	}
+}
+///////////////////////////////////////////////////////////////////
+class DiscountProduct extends Product {
+	private int discount;
+	DiscountProduct(String n, int p, int c, int dis) {
+		super(n,p,c);
+		this.discount = dis;
+	}
+	public void setDis(int d) {
+		this.discount = d;
+	}
+	public int getDis() {
+		return discount;
+	}
+	public int getPrice() {
+		return ((100-discount)*super.getPrice())/100;
+	}
+	public void pr() {
+		System.out.print("이름: "+super.getName()+", 가격: "+getPrice());
+	}
+	public String toString(){
+		return "이름: "+super.getName()+", 가격: "+getPrice();
+	}
+}
+///////////////////////////////////////////////////////////////////
+class j1110 {
+	public static void main(String ar[]) {
+		Scanner sc = new Scanner(System.in);
+		System.out.print("입력 : ");
+		String name = sc.next();
+		int pri = sc.nextInt();
+		int count = sc.nextInt();
+		Product p1 = new Product(name,pri,count);
+		System.out.println(p1.toString());
+
+		name = sc.next();
+		pri = sc.nextInt();
+		count = sc.nextInt();
+		int sale = sc.nextInt();
+		DiscountProduct p2 = new DiscountProduct(name,pri,count,sale);
+		System.out.println(p2.toString());
+	}
+}

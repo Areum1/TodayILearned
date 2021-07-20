@@ -1,0 +1,22 @@
+
+public class Father {
+	
+	private int nai = 55;
+	private int house = 1;
+	public String gabo = "È²±İµÅÁö";
+
+	public Father(int nai) {
+		super();
+		this.nai = nai;
+	}
+
+	
+	int getNai() {
+		return nai;
+	}
+
+	public int getHouse() {
+		return house;
+	}
+	
+}

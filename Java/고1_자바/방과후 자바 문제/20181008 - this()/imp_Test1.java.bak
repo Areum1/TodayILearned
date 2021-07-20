@@ -1,0 +1,4 @@
+interface Buyable {
+	public int getPrice();
+}
+class imp_Test1

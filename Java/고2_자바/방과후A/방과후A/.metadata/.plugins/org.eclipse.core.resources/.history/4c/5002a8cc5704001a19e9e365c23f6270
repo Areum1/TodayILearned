@@ -1,0 +1,19 @@
+public class Cheif extends Employee {
+	
+	private String part; // 업무 파트
+	
+	public Chief(String name, String id, String part) {
+		super(name, id);
+		this.part = part;
+	}
+	
+	@Override
+	public void startJob() {
+		System.out.println(name + "님이 프로그램 개발팀 직원을 관리합니다.");
+	}
+	
+	public void dispPart() {
+		System.out.println(name + "님이 맡고 있는 파트는  " + part + "입니다.");
+	}
+
+}

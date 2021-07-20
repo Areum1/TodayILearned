@@ -1,0 +1,50 @@
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.io.PrintWriter;
+import java.net.Socket;
+import java.util.List;
+
+
+public class PerClientThread extends Thread{
+	//미완성
+	
+	static List<PrintWriter> list = Collections.synchronizedList(new ArrayList<PrintWriter>()); //화장실가면 문잠구는거
+	Socket socket;
+	PrintWriter writer;
+	
+	public PerClientThread(Socket socket) {
+		this.socket = socket;
+		try {
+			
+			writer = new PrintWriter(socket.getOutputStream()); //문자열을 바이트로 바꾼것
+			list.add(writer);
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+	
+	@Override
+	public void run() {
+		try {
+			BufferedReader reader = new BufferedReader(new InputStreamReader(socket.getInputStream())); //안,녕을 안녕으로 하려면 buffer사용
+			
+			while(true) {
+				String str = reader.readLine();
+				if(str == null) break;
+				
+				for(PrintWriter writer : list) {
+					writer.println(str);
+					writer.flush();
+				}
+			}
+			
+		} catch (Exception e) {
+			
+		}
+		finally {
+			list.remove(writer);
+			try { socket.close(); } catch (Exception e2) { e2.printStackTrace(); }
+		}//finally
+	}
+}

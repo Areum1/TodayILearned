@@ -1,0 +1,13 @@
+
+public class AccountMain extends Account {
+	public static void main(String args[]) {
+		Account a1 = new Account("111-222-3333333","±è¿µ½Ä",200000);
+		Account a2 = new Account("555-666-7777777","¹ÚÁøÈñ",1000000);
+		printAccount(a1);
+		System.out.print("\n");
+		printAccount(a2);
+	}
+	public static void printAccount(Account a) {
+		System.out.println("°èÁÂ¹øÈ£ : " + a.accountNo+ "\n¿¹±İÁÖ : "+a.ownerName + "\nÀÜ¾× : "+a.balance);
+	}
+}

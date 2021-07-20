@@ -1,0 +1,46 @@
+public class EmployeeMain {
+
+	public static void main(String[] args) {
+		// 방법 1 : Employee 클래스를 사용 안 한 경우
+		/*Programmer programmer = new Programmer("박찬호", "P1234", 3);
+		Designer designer = new Designer("안정환", "P2213", "플래쉬");
+		Chief chief = new Chief("홍길동", "P4421", "윈도우 개발팀");
+		
+		designer.gotoOffice();
+		designer.startJob();
+		
+		chief.gotoOffice();
+		chief.startJob();
+		
+		designer.gotoHome();
+		chief.gotoHome();*/
+		
+		// 방법 2 : Employee 클래스 사용
+		/*Employee p1 = new Programmer("박찬호", "P1234", 3); // 업캐스팅
+		Employee d1 = new Designer("안정환", "P2213", "플래쉬");
+		Employee pc1 = new Cheif("홍길동", "P4421", "윈도우 개발팀");
+		
+		p1.gotoOffice();
+		p1.startJob();
+		
+		d1.gotoOffice();
+		d1.startJob();
+		
+		pc1.gotoOffice();
+		pc1.startJob();
+		
+		System.out.println();
+		
+		p1.gotoHome();
+		d1.gotoHome();
+		pc1.gotoHome();*/
+		
+		//방법 3 : 배열을 사용
+		Employee employee[] = new Employee[3];
+		employee[0] = new Programmer("박찬호", "P1234", 3);
+		employee[1] = new Designer("안정환", "P2213", "플래쉬");
+		employee[2] = new new Cheif("홍길동", "P4421", "윈도우 개발팀");
+		
+	}
+
+}

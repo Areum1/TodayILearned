@@ -1,0 +1,19 @@
+class Phone {
+	String product;
+	int price;
+	String type;
+	public void OS_type () {
+	}
+	public void OS_version () {
+	}
+	public void size () {
+	}
+	public void camera () {
+	}
+	public void bluetooth () {
+	}
+}
+class SmartPhone extends Phone {
+}
+class PhoneTest {
+}

@@ -1,0 +1,18 @@
+
+public class AnimalMain {
+
+	
+	public static void main(String[] args) {
+		Ani_cow cow = new Ani_cow();
+		System.out.println(cow.name()+" "+cow.action()+' '+cow.eat() + " 먹음");
+		
+		Ani_lion lion = new Ani_lion();
+		System.out.println(lion.name()+" "+lion.action()+' '+lion.eat() + " 먹음");
+		
+		System.out.println("======별도의 클래스 사용======");
+		
+		AnimalFind af = new AnimalFind();
+		af.find(cow);
+	}
+	
+}

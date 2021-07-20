@@ -1,0 +1,34 @@
+class Song {
+	String title;
+	String artist;
+	String album;
+	String composer[] ; 
+	int year;
+	int track;
+
+public Song (String title, String artist, String album, String composer[] , int year, int track) {
+	this.title = title;
+	this.artist = artist;
+	this.album = album;
+	this.composer = composer;
+	this.year = year;
+	this.track = track;
+} 
+
+public void show() {
+	System.out.println("노래 제목 "+this.title);
+	System.out.println("가수 "+this.artist);
+	System.out.println("앨범 제목 "+this.album);
+	System.out.println("발표된 연도 "+this.year);
+	System.out.println("트랙번호 "+this.track);
+	System.out.print("작곡가 ");
+	for (int i = 0; i<this.composer.length; i++ ){
+		System.out.print(this.composer[i]+" ");
+	}
+	System.out.println();
+}
+	public static void main(String ar[]) {
+	Song Song = new Song("Dancing Queen","ABBA","The albums", new String[] {"Benny Andersson", "Bjorn Ulvaeus","Stig Anderson"},1992,2);
+	Song.show();
+}
+}

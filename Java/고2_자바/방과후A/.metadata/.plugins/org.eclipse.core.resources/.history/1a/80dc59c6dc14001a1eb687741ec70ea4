@@ -1,0 +1,24 @@
+
+public class TV implements Volume {
+
+	private int volLevel;
+	
+	public TV() {
+		volLevel = 0;
+	}
+	
+	@Override
+	public void volumeUp(int level) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void volumeDown(int level) {
+		// TODO Auto-generated method stub
+		
+	}
+	
+	
+	
+}

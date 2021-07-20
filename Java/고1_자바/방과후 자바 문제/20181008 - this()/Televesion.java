@@ -1,0 +1,25 @@
+//다음 인터페이스를 구현하고 객체생성하시오
+//Televesion이 상속 model, maker, price를 갖는다 > 생성자 작성할 것 > main에서 객체 만들고 출력
+
+interface Buyable {
+	public int getPrice();
+}
+class Televesion implements Buyable {
+	String model;
+	String maker;
+	int price;
+	Televesion(String model, String maker, int price) {
+		this.model = model;
+		this.maker = maker;
+		this.price = price;
+		System.out.println(this.price);
+	}
+	public int getPrice() {
+		return 100;
+	}
+	public static void main(String ar[]) {
+	Televesion t = new Televesion("TC","LG",30);
+	System.out.println(t.getPrice());
+	System.out.println(t.maker);
+	}
+}

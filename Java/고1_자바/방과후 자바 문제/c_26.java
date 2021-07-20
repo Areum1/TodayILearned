@@ -1,0 +1,6 @@
+import java.util.*;
+class c_26 {
+public static void main(String ar[]) {
+
+}
+}

@@ -1,0 +1,13 @@
+
+public class AnimalMain {
+
+	
+	public static void main(String[] args) {
+		Ani_cow cow = new Ani_Cow();
+		System.out.println(cow.name()+" "+cow.action()+' '+cow.eat() + " ∏‘¿Ω");
+		
+		Ani_lion lion = new Ani_lion();
+		System.out.println(lion.name()+" "+lion.action()+' '+lion.eat() + " ∏‘¿Ω");
+	}
+	
+}

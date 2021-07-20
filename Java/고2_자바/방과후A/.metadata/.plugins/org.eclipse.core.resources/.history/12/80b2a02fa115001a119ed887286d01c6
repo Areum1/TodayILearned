@@ -1,0 +1,23 @@
+
+public class HandPhone implements Volume {
+
+	private int vol;
+	
+	public HandPhone() {
+		vol = 0;
+	}
+	
+	@Override
+	public void volumeUp(int level) {
+		vol += level;
+		System.out.println("핸드폰 볼륨 : "+vol);
+	}
+
+	@Override
+	public void volumeDown(int level) {
+
+		vol -= level;
+		System.out.println("핸드폰 볼륨 : "+vol);
+	}
+
+}

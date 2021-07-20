@@ -1,0 +1,27 @@
+class daniel_Test1{
+public static void main(String ar[]){
+	System.out.println(ar[0]);
+	System.out.println(ar[1]);
+	System.out.println(ar[2]);
+	System.out.println(ar[3]);
+	System.out.println(ar[4]);
+
+	int a = Integer.parseInt(ar[0]);
+	int b = Integer.parseInt(ar[1]);
+	int c = Integer.parseInt(ar[2]);
+	int d = Integer.parseInt(ar[3]);
+	int e = Integer.parseInt(ar[4]);
+
+	if (a<0)
+		a= -a;
+	if (b<0)
+		b= -b;
+	if (c<0)
+		c= -c;
+	if (d<0)
+		d= -d;
+	if (e<0)
+		e= -e;
+System.out.println("aÀÇ Àý´ñ°ª : "+a+" bÀÇ Àý´ñ°ª : "+b+" cÀÇ Àý´ñ°ª : "+c+" dÀÇ Àý´ñ°ª : "+d+" eÀÇ Àý´ñ°ª : "+e);
+}
+}

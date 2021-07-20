@@ -1,0 +1,13 @@
+
+public class CheckingAccount extends Account {
+	String cardNo;
+	public int pay(String cardNo, int amount) {
+		if(this.cardNo == cardNo && amount < balance) {
+			System.out.println("ม๖บาพื : "+ amount);
+			balance -= amount;
+			System.out.println("ภÜพื : "+balance);
+		}
+		return 0;
+	}
+	
+}

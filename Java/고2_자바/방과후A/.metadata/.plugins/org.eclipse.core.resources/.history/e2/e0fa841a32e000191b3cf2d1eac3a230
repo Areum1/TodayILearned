@@ -1,0 +1,15 @@
+
+public class CheckingAccountMain extends CheckingAccount {
+
+	public static void main(String[] args) {
+		CheckingAccount ca = new CheckingAccount();
+		ca.accountNo = "111-22-3333333";
+		ca.ownerName = "ȫ�浿";
+		ca.balance = 0;
+		ca.cardNo = "5555-6666-7777-8888";
+		ca.deposit(100000);
+		ca.pay(47000);
+
+	}
+
+}

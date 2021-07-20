@@ -1,0 +1,12 @@
+
+public class AnimalFind {
+
+	public void Find(Ani_cow cow) {
+		System.out.println(cow.name()+" "+cow.action()+' '+cow.eat() + " ∏‘¿Ω");
+	}
+	
+	public void Find(Ani_lion lion) {
+		System.out.println(lion.name()+" "+lion.action()+' '+lion.eat() + " ∏‘¿Ω");
+	}
+	
+}

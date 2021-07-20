@@ -1,0 +1,16 @@
+class freeTest_5{
+public static void main(String ar[]){
+	int a[] = new int[899];
+	int sum= 0, count = 0;
+	for (int i = 100; i<899; i++)
+	{
+		a[i-100] = i;
+		if (a[i-100] %7 == 0)
+		{
+			sum = sum + a[i-100];
+			count++;
+		}
+	}
+	System.out.println("합계 :  "+sum+" "+"개수 : "+count);
+	}
+}

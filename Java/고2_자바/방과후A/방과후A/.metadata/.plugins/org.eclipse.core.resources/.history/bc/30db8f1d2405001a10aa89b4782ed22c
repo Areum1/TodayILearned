@@ -1,0 +1,20 @@
+
+public class DBAnalyst extends Employee {
+	
+	private String dbms;
+	
+	public DBAnalyst (String name, String id, String dbms) {
+		super(name,id);
+		this.dbms = dbms;
+	}
+	
+	public void dbAdmin() {
+		System.out.println(name+" 님의 관리 서버는 "+dbms+"입니다");
+	}
+
+	@Override
+	public void startJob() {
+		// TODO Auto-generated method stub
+		
+	}
+}

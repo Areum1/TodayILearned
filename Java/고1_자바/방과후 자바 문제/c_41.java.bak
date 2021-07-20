@@ -1,0 +1,20 @@
+class c_41 {
+	byte byteField;
+	short shortField;
+	int intField;
+	long longField;
+
+	boolean booleanField;
+	char charField;
+
+	float floatField;
+	double doubleField;
+
+	int[] arrField = new int[2];
+	String referenceField;
+
+public static void main(String ar[]){
+		c_41 hw = new c_41();
+		System.out.println(hw.byteField);
+	}
+}

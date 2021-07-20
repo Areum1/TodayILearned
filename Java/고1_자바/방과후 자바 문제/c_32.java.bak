@@ -1,0 +1,3 @@
+class c_32 {
+public static void main(String ar[]){
+	int a[] = new int[3][4];

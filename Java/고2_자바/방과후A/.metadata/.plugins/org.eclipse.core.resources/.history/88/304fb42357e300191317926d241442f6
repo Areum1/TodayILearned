@@ -1,0 +1,15 @@
+
+public class CreditLineAccount extends Account {
+	int creditLine; //한도 필드
+	
+	public CreditLineAccount (String accountNo, String ownerName, int balance, int creditLine) {
+		super(accountNo,ownerName,balance);
+		this.creditLine = creditLine;
+	}
+	
+	public int withdraw(int with){
+		if(creditLine >= with) 
+			return balance-with;
+		return 0;
+	}
+}

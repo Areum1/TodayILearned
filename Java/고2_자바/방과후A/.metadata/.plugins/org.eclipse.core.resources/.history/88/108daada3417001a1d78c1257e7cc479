@@ -1,0 +1,8 @@
+
+public class FlyerUtil {
+	
+	public static void show(Flyer f) {
+		f.fly();
+	}
+	
+}

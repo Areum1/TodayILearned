@@ -1,0 +1,31 @@
+import java.util.*;
+class Book2 {
+	String title;
+	String writer;
+	public Book2 (String title, String writer) {
+		this.title = title;
+		this.writer = writer;
+	}
+	public String getTitle () {
+		return title;
+	}
+	public String getWriter () {
+		return writer;
+	}
+}
+class Book23 {
+	public static void main(String ar[]) {
+	String title2;
+	String writer2;
+	Scanner sc = new Scanner (System.in);
+	Book2 [] b = new Book2[2];
+	for (int i = 0; i<2; i++)
+	{
+		title2 = sc.next();
+		writer2 = sc.next();
+		b[i] = new Book2(title2, writer2);
+	}
+	for (int i = 0; i<2; i++)
+		System.out.println("("+b[i].getTitle()+", "+b[i].getWriter()+")");
+	}
+}

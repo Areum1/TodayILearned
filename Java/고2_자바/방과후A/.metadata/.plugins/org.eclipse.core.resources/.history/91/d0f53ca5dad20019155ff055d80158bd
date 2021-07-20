@@ -1,0 +1,8 @@
+
+public class Animal {
+
+	public String name() {
+		return null;
+	}
+	
+}

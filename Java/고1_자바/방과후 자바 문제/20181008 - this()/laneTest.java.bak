@@ -1,0 +1,46 @@
+import java.util.*;
+
+class Plane {
+	static int planes = 0;
+	private String maker;
+	private String model;
+	private int passenger;
+	Plane(String ma, String mo) {
+		this.maker = ma;
+		this.model = mo;
+		planes++;
+		}
+	Plane(String ma, String mo,int p) {
+		this.maker = ma;
+		this.model = mo;
+		this.passenger = p;
+		planes++;
+	}
+	public void setMaker(String ma) {
+		this.maker = ma; }
+	public void setModel(String mo) {
+		this.model = mo; }
+	public void setPass(int p) {
+		this.passenger = p; }
+	public String getMaker(){
+		return maker; }
+	public String getModel() {
+		return model; }
+	public int getPass() {
+		return passenger; }
+	public void getPlanes() {
+		return planes;
+	}
+}
+///////////////////////////////////////////////////////////////
+class laneTest {
+	public static void main(String ar[]) {
+		Plane p1 = new Plane("에어비스","A380",500);
+		Plane p2 = new Plane("대한항공","A381");
+		p1.setModel("원에어");
+		p1.getMaker();
+		p2.setPass(400);
+		p1.getPlanes();
+		p2.getPlanes();
+	}
+}

@@ -1,0 +1,23 @@
+class Dog {
+String name;
+String breed;
+int age;
+Dog(String name, int age) {
+	this.name = name;
+	this.age = age;
+}
+Dog(String name, String breed, int age){
+	this.name = name;
+	this.breed = breed;
+	this.age = age;
+}
+public static void main(String ar[]){
+	Dog d1 = new Dog("아롱",4);
+	Dog d2 = new Dog("옹성우","요크셔테리어",23);
+	System.out.println("개 이름 : "+d1.name);
+	System.out.println("개 나이 : "+d1.age);
+	System.out.println("개 이름 : "+d2.name);
+	System.out.println("개 나이 : "+d2.age);
+	System.out.println("개 종류 : "+d2.age);
+}
+}

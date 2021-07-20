@@ -1,0 +1,10 @@
+
+public class CreditLineAccountMain {
+
+	public static void main(String[] args) {
+		
+		CreditLineAccount cl = new CreditLineAccount("000-11-111111","±è¼±´Þ",10000,20000000);
+
+	}
+
+}

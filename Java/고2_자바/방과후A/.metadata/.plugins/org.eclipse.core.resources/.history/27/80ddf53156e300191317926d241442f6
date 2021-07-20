@@ -1,0 +1,8 @@
+
+public class CreditLineAccount extends Account {
+	int creditLine; //한도 필드
+	
+	public int withdraw(){
+		return 0;
+	}
+}

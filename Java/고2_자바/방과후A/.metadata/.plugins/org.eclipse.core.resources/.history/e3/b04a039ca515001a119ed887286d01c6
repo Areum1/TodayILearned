@@ -1,0 +1,6 @@
+
+public interface InterVol {
+
+	public static final String vol;
+	
+}

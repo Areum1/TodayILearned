@@ -1,0 +1,129 @@
+import java.util.*;
+interface Starcraft {
+	int MAX = 100;
+	int MIN = 0;
+	int STEP = 5; //움직임 간격
+	int FLAG = 1;
+	public int Xmovable(int flag1); //5씩 움직이기
+	public int Ymovable(int flag2); //5씩 움직이기
+	public void attackable(); //공격하는거
+}
+
+class Jurg implements Starcraft{
+	int xPos = 10, yPos = 10; //위치 지정자표
+	String color; //종족 색상
+	int flag1 = 1,flag2 = 1;
+
+	public int Xmovable(int flag1){
+		if (flag1 == 1) {
+			if (xPos>=MAX)
+				xPos = 10;
+			xPos += STEP;
+	}//flag1 if
+	else {
+			if (xPos<=MIN)
+				xPos = 10;
+			xPos -= STEP;
+	}//flag1 else
+	return xPos;
+	}//Xmovable
+
+	public int Ymovable(int flag2){
+	if (flag2 == 1) {
+			if (yPos>=MAX)
+				yPos = 10;
+			yPos += STEP;
+	}//flag2 if
+	else {
+			if (yPos<=MIN)
+				yPos = 10;
+			yPos -= STEP;
+	}//flag2 else
+	return yPos;
+	}//Ymovable
+	public void attackable(){
+		System.out.println("공격");
+	}
+}
+
+class Marin implements Starcraft{
+	int xPos = 10, yPos = 10; //위치 지정자표
+	String color; //종족 색상
+	int flag1 = 1,flag2 = 1;
+
+	public int Xmovable(int flag1){
+		if (flag1 == 1) {
+			if (xPos>=MAX)
+				xPos = 10;
+			xPos += STEP;
+	}//flag1 if
+	else {
+			if (xPos<=MIN)
+				xPos = 10;
+			xPos -= STEP;
+	}//flag1 else
+	return xPos;
+	}//Xmovable
+
+	public int Ymovable(int flag2){
+	if (flag2 == 1) {
+			if (yPos>=MAX)
+				yPos = 10;
+			yPos += STEP;
+	}//flag2 if
+	else {
+			if (yPos<=MIN)
+				yPos = 10;
+			yPos -= STEP;
+	}//flag2 else
+	return yPos;
+	}//Ymovable
+	public void attackable(){
+		System.out.println("공격");
+	}
+}
+class inter_Test2 {
+	public static void main(String ar[]) {
+		Jurg j = new Jurg();
+		Marin m = new Marin();
+		Scanner sc = new Scanner (System.in);
+		int walk1,walk2;
+		int x,y;
+		String ch;
+		while (true) {
+			System.out.print("어떤 캐릭터를 움직이시겠습니까? 끝내시려면 끝 입력 : ");
+			ch = sc.next();
+			if (ch.equals("jurg")||ch.equals("Jurg")) {
+				System.out.print("오른쪽 이동 => 1, 왼쪽 이동 => 0 : ");
+				walk1 = sc.nextInt();
+				System.out.print("위쪽 이동 => 1, 아래쪽 이동 => 0 : ");
+				walk2 = sc.nextInt();
+				x = j.Xmovable(walk1);
+				y = j.Ymovable(walk2);
+				for (int i = 1; i < y; i++)
+					System.out.print("\n");
+				for (int i = 1; i < x; i++)
+					System.out.print(" ");
+				System.out.println("*");
+				System.out.println("당신의 캐릭터는 "+x+", "+y+" 이동하셨습니다.");
+			}//jurg if
+			else if (ch.equals("marin")||ch.equals("Marin")) {
+				System.out.print("오른쪽 이동 => 1, 왼쪽 이동 => 0 : ");
+				walk1 = sc.nextInt();
+				System.out.print("위쪽 이동 => 1, 아래쪽 이동 => 0 : ");
+				walk2 = sc.nextInt();
+				x = m.Xmovable(walk1);
+				y = m.Ymovable(walk2);
+				for (int i = 1; i < y; i++)
+					System.out.print("\n");
+				for (int i = 1; i < x; i++)
+					System.out.print(" ");
+				System.out.println("*");
+				System.out.println("당신의 캐릭터는 "+x+", "+y+" 이동하셨습니다.");
+			}//marin if
+			else if (ch.equals("끝")){
+				break;
+			}//끝 if
+		}//while
+	}//main
+}//class

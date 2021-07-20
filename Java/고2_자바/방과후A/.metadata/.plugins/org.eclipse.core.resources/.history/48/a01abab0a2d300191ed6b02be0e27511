@@ -1,0 +1,15 @@
+
+public class AnimalFind {
+
+	public void Find(Ani_cow cow) {
+		System.out.println(cow.name()+" "+cow.action()+' '+cow.eat() + " 먹음");
+	}
+	
+	public void Find(Ani_lion lion) {
+		System.out.println(lion.name()+" "+lion.action()+' '+lion.eat() + " 먹음");
+	}
+	
+}
+
+//9월 10일
+// 똑같은 이름을 가진 메서드가 있으면 메서드 오버로딩 (타입이 달라야함)

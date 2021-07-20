@@ -1,0 +1,5 @@
+class plus_hw1{
+	public static void main(String ar[]){
+		Student1 s = new Student1();
+		}
+		}

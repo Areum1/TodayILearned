@@ -1,0 +1,15 @@
+class a369{
+public static void main(String ar[]){
+	int a[] = new int [100];
+		int b,c,i;
+		for (i = 0; i<a.length; i++)
+		{
+			a[i] = i+1;
+			b = a[i] % 10;
+			c = a[i] /10;
+		}
+		for (; ; )
+		{
+		}
+	}
+}

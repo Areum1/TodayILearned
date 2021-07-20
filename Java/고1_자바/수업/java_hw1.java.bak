@@ -1,0 +1,22 @@
+class java_hw1 {
+	public void Add (int a,int b) {
+		System.out.println(a+b);
+	}
+	public void Sub (int a,int b) {
+		System.out.println(a-b);
+	}
+	public void Mul (int a,int b) {
+		System.out.println(a*b);
+	}
+	public void Div (int a,int b) {
+		System.out.println(a/b);
+	}
+	
+	public static void main(String ar[]]) {
+		java_hw1 a = new java_hw1();
+		a.Add(1,2);
+		a.Sub(2,1);
+		a.Mul(4,3);
+		a.Div(4,2);
+	}
+}

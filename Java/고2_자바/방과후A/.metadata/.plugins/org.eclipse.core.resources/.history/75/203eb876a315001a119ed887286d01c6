@@ -1,0 +1,30 @@
+
+public class VolumeMain {
+
+	public static void main(String[] args) {
+		// 인터페이스는 new를 할 수 없다.
+		// Volume volume = new Volume();
+		
+		Radio radio = new Radio();
+		TV tv = new TV();
+		HandPhone handPhone = new HandPhone();
+		
+		radio.volumeUp(3);
+		radio.volumeUp(4);
+		radio.volumeDown(5);
+		
+		tv.volumeUp(19);
+		tv.volumeUp(200);
+		tv.volumeUp(90);
+		tv.volumeDown(-100);
+		
+		handPhone.volumeUp(11);
+		handPhone.handshow();
+		
+		System.out.println("======================================");
+		//인터페이스도 다형성 지원함
+		
+		Volume volume = radio; //업캐스팅
+		volume.volumeUp(1);
+	}
+}

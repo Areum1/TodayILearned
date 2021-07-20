@@ -1,0 +1,30 @@
+abstract class Ship {
+	public abstract int maxspeed();
+	public abstract int passenger();
+}
+class yacht extends Ship {
+	public int maxspeed() {
+		return 80;
+	}
+	public int passenger() {
+		return 4;
+	}
+}
+class boat extends Ship {
+	public int maxspeed() {
+		return 70;
+	}
+	public int passenger() {
+		return 3;
+	}
+}
+class ship1 {
+	public static void main(String ar[]){
+		yacht y = new yacht();
+		boat b = new boat();
+		System.out.println("요트의 최고 속도 : "+y.maxspeed());
+		System.out.println("요트의 탑승 인원 : "+y.passenger());
+		System.out.println("보트의 최고 속도 : "+b.maxspeed());
+		System.out.println("보트의 탑승 인원 : "+b.passenger());
+	}
+}

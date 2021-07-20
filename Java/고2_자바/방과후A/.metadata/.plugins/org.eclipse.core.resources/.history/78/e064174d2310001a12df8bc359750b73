@@ -1,0 +1,17 @@
+
+public class ClientExample4 {
+
+	public static void main(String[] args) {
+		if(args.length != 1) {
+			System.out.println("[경고] java ClientExample4 \"대화명\" 형식으로 실행해주세요.");
+			return;
+		}
+		
+		try {
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+}

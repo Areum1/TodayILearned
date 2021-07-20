@@ -1,0 +1,14 @@
+//Â¦¼ö È¦¼ö ÆÇ´Ü
+class odd3 {
+	int i = 9;
+	public String daniel() {
+		if(i%2==0)
+			return "Â¦¼ö";
+		else if (i%2==1)
+			return "È¦¼ö";
+	}
+	public static void main(String ar[]){
+		odd3 odd = new odd3();
+		System.out.println(odd.daniel());
+	}
+} //class

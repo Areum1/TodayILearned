@@ -1,0 +1,6 @@
+import java.util.*;
+class c_18{
+public static void main(String ar[]) {
+Scanner sc = new Scanner(System.in);
+}
+}

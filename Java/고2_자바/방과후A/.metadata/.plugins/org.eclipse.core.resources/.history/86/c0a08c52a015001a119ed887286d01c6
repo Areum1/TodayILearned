@@ -1,0 +1,26 @@
+
+public class TV implements Volume {
+
+	// 추상 클래스로 안 만들고 임플리먼트로 만드는 이유 다중상속
+	
+	private int volLevel;
+	
+	public TV() {
+		volLevel = 0;
+	}
+	
+	@Override
+	public void volumeUp(int level) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void volumeDown(int level) {
+		// TODO Auto-generated method stub
+		
+	}
+	
+	
+	
+}

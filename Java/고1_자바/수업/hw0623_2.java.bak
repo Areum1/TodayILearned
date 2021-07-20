@@ -1,0 +1,6 @@
+class hw0623_2 {
+public static void main (String ar[]){
+	System.out.println(ar[0]);
+	System.out.println(ar[1]);
+	}
+}

@@ -1,0 +1,16 @@
+class Music {
+  //private으로 title, composer, singer, year(발표년도), age
+
+  //생성자
+
+  //setAge()
+  //getAge()
+
+  public static void main(String ar[]) {
+     Music m1=new Music("c","cc","Mike",2011,30);
+     Music m2=new Music("d",,"Alice",2017,25);
+     Music m3=new Music("e","ee","Tom",2018);
+
+     m3의 setAge호출
+     m3의 getAge 호출
+     }

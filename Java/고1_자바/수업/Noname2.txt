@@ -1,0 +1,17 @@
+import java.util.*;
+ class minji_2 {
+  pubilc static void main (String ar[]) {
+   Scanner sc =new scanner(System.in);
+
+   int a[]=new int[5];
+    int i;
+    int sum=0;
+     System.out.println(" 정수 5개를 입력하시오.: ");
+
+     for( i=0; i<a.length; i++) {
+     a[i]=sc.nextInt();
+     sum+=a[i];
+     }
+      System.out.println(sum);
+      }
+     }

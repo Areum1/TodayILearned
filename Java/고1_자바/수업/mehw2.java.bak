@@ -1,0 +1,9 @@
+class mehw2 {
+	public void greeting(int x) {
+		return (x-y);
+	} //subtract
+	public static void main(String ar[]) {
+		mehw1 hw = new mehw1();
+			System.out.println(hw.subtract (5,7));
+	} //main
+} //class

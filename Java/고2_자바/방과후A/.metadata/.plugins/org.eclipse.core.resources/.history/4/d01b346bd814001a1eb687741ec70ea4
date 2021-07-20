@@ -1,0 +1,7 @@
+
+public interface Volume {
+	
+	// 인터페이스는 추상 메소드만 가질 수 있다.
+	// 멤버변수를 기술하면  public static final 키워드가 붙는다.
+	
+}

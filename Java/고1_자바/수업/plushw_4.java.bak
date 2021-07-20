@@ -1,0 +1,11 @@
+class plushw_4 {
+	public void plus(int a, int sum) {
+		for(a = 1; a<=5; a++){
+			sum +=a;
+		}
+	}
+public static void main(String ar[]){
+	plushw_4 hw = new plushw_4();
+	hw.plus(1,0);
+	}
+}
